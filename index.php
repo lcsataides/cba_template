@@ -19,7 +19,6 @@ get_header();
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
-
 		<?php
 		if ( have_posts() ) {
 
@@ -33,8 +32,6 @@ get_header();
 			twentynineteen_the_posts_navigation();
 
 		} else {
-
-			// If no content, include the "No posts found" template.
 			get_template_part( 'template-parts/content/content', 'none' );
 
 		}

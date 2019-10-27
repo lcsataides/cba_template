@@ -47,7 +47,7 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
  * a custom font that includes just a Hoefler Text space replacement for that
  * character instead.
  */
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Londrina+Solid&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Rubik&display=swap");
 /* If we add the border using a regular CSS border, it won't look good on non-retina devices,
  * since its edges can look jagged due to lack of antialiasing. In this case, we are several
  * layers of box-shadow to add the border visually, which will render the border smoother. */
@@ -2241,7 +2241,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 1.15;
 }
 
 .main-navigation,
@@ -2403,7 +2404,7 @@ i {
 blockquote cite {
   font-size: 0.6015em;
   font-style: normal;
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 pre {
@@ -2476,6 +2477,10 @@ a {
   color: #FF914C;
 }
 
+a:visited {
+  color: #ff6200;
+}
+
 a:hover,
 a:active {
   color: #ff6200;
@@ -2496,7 +2501,7 @@ h4,
 h5,
 h6 {
   clear: both;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 h1:not(.site-title):before,
@@ -2505,7 +2510,7 @@ h2:before {
   content: "\020";
   display: block;
   height: 2px;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   width: 1em;
 }
 
@@ -2517,7 +2522,7 @@ hr {
 
 ul,
 ol {
-  padding-right: 1rem;
+  padding-right: 1.5rem;
 }
 
 ul {
@@ -2538,7 +2543,7 @@ li {
 
 li > ul,
 li > ol {
-  padding-right: 2rem;
+  padding-right: 3rem;
 }
 
 dt {
@@ -2546,7 +2551,7 @@ dt {
 }
 
 dd {
-  margin: 0 1rem 1rem;
+  margin: 0 1.5rem 1.5rem;
 }
 
 img {
@@ -2562,11 +2567,11 @@ figure {
 blockquote {
   border-right: 2px solid #FF914C;
   margin-right: 0;
-  padding: 0 1rem 0 0;
+  padding: 0 1.5rem 0 0;
 }
 
 blockquote > p {
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
 }
 
 blockquote cite {
@@ -2574,10 +2579,10 @@ blockquote cite {
 }
 
 table {
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
   border-collapse: collapse;
   width: 100%;
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 table td,
@@ -2599,12 +2604,12 @@ input[type="submit"] {
   border-radius: 5px;
   box-sizing: border-box;
   color: #fff;
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 0.75188em;
   font-weight: 700;
   line-height: 1.2;
   outline: none;
-  padding: 0.76rem 1rem;
+  padding: 1.14rem 1.5rem;
   text-decoration: none;
   vertical-align: bottom;
 }
@@ -2658,7 +2663,7 @@ textarea {
   border: solid 1px #ccc;
   box-sizing: border-box;
   outline: none;
-  padding: 0.36rem 0.66rem;
+  padding: 0.54rem 0.99rem;
   -webkit-appearance: none;
   outline-offset: 0;
   border-radius: 0;
@@ -2698,7 +2703,7 @@ textarea {
 }
 
 form p {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 /* Navigation */
@@ -2732,7 +2737,7 @@ a:focus {
 /** === Main menu === */
 .main-navigation {
   display: block;
-  margin-top: 0.25rem;
+  margin-top: 0.375rem;
   /* Un-style buttons */
   /*
 	 * Sub-menu styles
@@ -2761,7 +2766,7 @@ body.page .main-navigation {
   border: none;
   padding: 0;
   margin: 0;
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
   line-height: 1.2;
   text-decoration: none;
@@ -2801,11 +2806,11 @@ body.page .main-navigation {
 .main-navigation .main-menu > li > a {
   font-weight: 700;
   color: #FF914C;
-  margin-left: 0.5rem;
+  margin-left: 0.75rem;
 }
 
 .main-navigation .main-menu > li > a + svg {
-  margin-left: 0.5rem;
+  margin-left: 0.75rem;
 }
 
 .main-navigation .main-menu > li > a:hover,
@@ -2825,7 +2830,7 @@ body.page .main-navigation {
 }
 
 .main-navigation .main-menu > li.menu-item-has-children > a {
-  margin-left: 0.125rem;
+  margin-left: 0.1875rem;
 }
 
 .main-navigation .main-menu > li.menu-item-has-children > a:after,
@@ -2836,7 +2841,7 @@ body.page .main-navigation {
 
 .main-navigation .main-menu > li.menu-item-has-children .submenu-expand {
   display: inline-block;
-  margin-left: 0.25rem;
+  margin-left: 0.375rem;
   /* Priority+ Menu */
 }
 
@@ -2846,13 +2851,13 @@ body.page .main-navigation {
   line-height: 1.2;
   width: 24px;
   padding: 0;
-  margin-right: 0.5rem;
+  margin-right: 0.75rem;
 }
 
 .main-navigation .main-menu > li.menu-item-has-children .submenu-expand.main-menu-more-toggle svg {
   height: 24px;
   width: 24px;
-  top: -0.125rem;
+  top: -0.1875rem;
   vertical-align: text-bottom;
 }
 
@@ -2899,13 +2904,13 @@ body.page .main-navigation {
 .main-navigation .sub-menu > li.menu-item-has-children .submenu-expand {
   display: inline-block;
   position: absolute;
-  width: calc( 24px + 1rem);
+  width: calc( 24px + 1.5rem);
   left: 0;
-  top: calc( .125 * 1rem);
+  top: calc( .125 * 1.5rem);
   bottom: 0;
   color: white;
   line-height: 1;
-  padding: calc( .5 * 1rem);
+  padding: calc( .5 * 1.5rem);
 }
 
 .main-navigation .sub-menu > li.menu-item-has-children .submenu-expand svg {
@@ -2928,7 +2933,7 @@ body.page .main-navigation {
   display: block;
   line-height: 1.2;
   text-shadow: none;
-  padding: calc( .5 * 1rem) 1rem calc( .5 * 1rem) calc( 24px + 1rem);
+  padding: calc( .5 * 1.5rem) 1.5rem calc( .5 * 1.5rem) calc( 24px + 1.5rem);
   white-space: nowrap;
 }
 
@@ -2964,7 +2969,7 @@ body.page .main-navigation {
 .main-navigation .sub-menu > li.mobile-parent-nav-menu-item svg {
   position: relative;
   top: 0.2rem;
-  margin-left: calc( .25 * 1rem);
+  margin-left: calc( .25 * 1.5rem);
 }
 
 .main-navigation .main-menu .menu-item-has-children:not(.off-canvas)[focus-within] > .sub-menu {
@@ -3302,7 +3307,7 @@ body.page .main-navigation {
 
 /* Social menu */
 .social-navigation {
-  margin-top: calc(1rem / 2);
+  margin-top: calc(1.5rem / 2);
   text-align: right;
 }
 
@@ -3359,7 +3364,7 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   .site-title + .social-navigation,
   .site-description + .social-navigation {
-    margin-top: calc(1rem / 5);
+    margin-top: calc(1.5rem / 5);
   }
 }
 
@@ -3405,7 +3410,7 @@ body.page .main-navigation {
 }
 
 .post-navigation .nav-links {
-  margin: 0 1rem;
+  margin: 0 1.5rem;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -3449,7 +3454,7 @@ body.page .main-navigation {
 @media only screen and (min-width: 1168px) {
   .post-navigation .nav-links .nav-previous,
   .post-navigation .nav-links .nav-next {
-    min-width: calc(50% - 2 * 1rem);
+    min-width: calc(50% - 2 * 1.5rem);
   }
 }
 
@@ -3464,7 +3469,7 @@ body.page .main-navigation {
 }
 
 .post-navigation .nav-links .nav-previous + .nav-next {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .post-navigation .nav-links .nav-previous .meta-nav:before {
@@ -3478,7 +3483,7 @@ body.page .main-navigation {
 @media only screen and (min-width: 1168px) {
   .post-navigation .nav-links .nav-next {
     order: 2;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
   }
 }
 
@@ -3489,11 +3494,11 @@ body.page .main-navigation {
 .pagination .nav-links {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 calc(.5 * 1rem);
+  padding: 0 calc(.5 * 1.5rem);
 }
 
 .pagination .nav-links > * {
-  padding: calc(.5 * 1rem);
+  padding: calc(.5 * 1.5rem);
 }
 
 .pagination .nav-links > *.dots, .pagination .nav-links > *.prev {
@@ -3535,7 +3540,7 @@ body.page .main-navigation {
     vertical-align: text-bottom;
   }
   .pagination .nav-links > * {
-    padding: 1rem;
+    padding: 1.5rem;
   }
 }
 
@@ -3548,7 +3553,7 @@ body.page .main-navigation {
 .comment-navigation .nav-next {
   min-width: 50%;
   width: 100%;
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
 }
 
@@ -3622,23 +3627,23 @@ body.page .main-navigation {
 /* Alignments */
 .alignleft {
   float: left;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 
 @media only screen and (min-width: 768px) {
   .alignleft {
-    margin-right: calc(2 * 1rem);
+    margin-right: calc(2 * 1.5rem);
   }
 }
 
 .alignright {
   float: right;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 @media only screen and (min-width: 768px) {
   .alignright {
-    margin-left: calc(2 * 1rem);
+    margin-left: calc(2 * 1.5rem);
   }
 }
 
@@ -3735,14 +3740,14 @@ body.page .main-navigation {
 .site-logo {
   position: relative;
   z-index: 999;
-  margin-bottom: calc(.66 * 1rem);
+  margin-bottom: calc(.66 * 1.5rem);
 }
 
 @media only screen and (min-width: 768px) {
   .site-logo {
     margin-bottom: 0;
     position: absolute;
-    left: calc(100% + (1.25 * 1rem));
+    left: calc(100% + (1.25 * 1.5rem));
     top: 4px;
     z-index: 999;
   }
@@ -3958,7 +3963,7 @@ body.page .main-navigation {
 }
 
 .site-header.featured-image .site-featured-image .entry-header {
-  margin-top: calc( 4 * 1rem);
+  margin-top: calc( 4 * 1.5rem);
   margin-bottom: 0;
   margin-right: 0;
   margin-left: 0;
@@ -3981,7 +3986,7 @@ body.page .main-navigation {
 }
 
 .site-header.featured-image .site-featured-image .entry-header .entry-meta > span {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   display: inline-block;
 }
 
@@ -4015,7 +4020,7 @@ body.page .main-navigation {
     position: relative;
   }
   .site-header.featured-image .site-featured-image .entry-header.has-discussion .entry-title {
-    padding-left: calc(1 * (100vw / 12) + 1rem);
+    padding-left: calc(1 * (100vw / 12) + 1.5rem);
   }
   .site-header.featured-image .site-featured-image .entry-header.has-discussion .entry-meta .comment-count {
     position: absolute;
@@ -4146,7 +4151,7 @@ body.page .main-navigation {
   padding: .25rem;
   position: absolute;
   text-transform: uppercase;
-  top: -1rem;
+  top: -1.5rem;
   z-index: 1;
 }
 
@@ -4156,11 +4161,11 @@ body.page .main-navigation {
 
 .page-links {
   clear: both;
-  margin: 0 0 calc(1.5 * 1rem);
+  margin: 0 0 calc(1.5 * 1.5rem);
 }
 
 .entry {
-  margin-top: calc(6 * 1rem);
+  margin-top: calc(6 * 1.5rem);
 }
 
 .entry:first-of-type {
@@ -4168,13 +4173,13 @@ body.page .main-navigation {
 }
 
 .entry .entry-header {
-  margin: calc(3 * 1rem) 1rem 1rem;
+  margin: calc(3 * 1.5rem) 1.5rem 1.5rem;
   position: relative;
 }
 
 @media only screen and (min-width: 768px) {
   .entry .entry-header {
-    margin: calc(3 * 1rem) calc(10% + 60px) 1rem;
+    margin: calc(3 * 1.5rem) calc(10% + 60px) 1.5rem;
   }
 }
 
@@ -4187,7 +4192,7 @@ body.page .main-navigation {
   content: "\020";
   display: block;
   height: 2px;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   width: 1em;
 }
 
@@ -4207,7 +4212,7 @@ body.page .main-navigation {
 
 .entry .entry-meta > span,
 .entry .entry-footer > span {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   display: inline-block;
 }
 
@@ -4237,16 +4242,16 @@ body.page .main-navigation {
 }
 
 .entry .entry-meta {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .entry .entry-footer {
-  margin: calc(2 * 1rem) 1rem 1rem;
+  margin: calc(2 * 1.5rem) 1.5rem 1.5rem;
 }
 
 @media only screen and (min-width: 768px) {
   .entry .entry-footer {
-    margin: 1rem calc(10% + 60px) calc(3 * 1rem);
+    margin: 1.5rem calc(10% + 60px) calc(3 * 1.5rem);
     max-width: calc(8 * (100vw / 12) - 28px);
   }
 }
@@ -4258,12 +4263,12 @@ body.page .main-navigation {
 }
 
 .entry .post-thumbnail {
-  margin: 1rem;
+  margin: 1.5rem;
 }
 
 @media only screen and (min-width: 768px) {
   .entry .post-thumbnail {
-    margin: 1rem calc(10% + 60px);
+    margin: 1.5rem calc(10% + 60px);
   }
 }
 
@@ -4343,8 +4348,8 @@ body.page .main-navigation {
 
 .entry .entry-content,
 .entry .entry-summary {
-  max-width: calc(100% - (2 * 1rem));
-  margin: 0 1rem;
+  max-width: calc(100% - (2 * 1.5rem));
+  margin: 0 1.5rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -4413,12 +4418,12 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .page-links a {
-  margin: calc(0.5 * 1rem);
+  margin: calc(0.5 * 1.5rem);
   text-decoration: none;
 }
 
 .entry .entry-content .wp-audio-shortcode {
-  max-width: calc(100vw - (2 * 1rem));
+  max-width: calc(100vw - (2 * 1.5rem));
 }
 
 @media only screen and (min-width: 768px) {
@@ -4435,7 +4440,7 @@ body.page .main-navigation {
 
 /* Author description */
 .author-bio {
-  margin: calc(2 * 1rem) 1rem 1rem;
+  margin: calc(2 * 1.5rem) 1.5rem 1.5rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -4452,13 +4457,13 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .author-bio {
-    margin: calc(3 * 1rem) calc(10% + 60px);
+    margin: calc(3 * 1.5rem) calc(10% + 60px);
   }
 }
 
 @media only screen and (min-width: 1168px) {
   .author-bio {
-    margin: calc(3 * 1rem) calc(10% + 60px);
+    margin: calc(3 * 1.5rem) calc(10% + 60px);
   }
 }
 
@@ -4471,7 +4476,7 @@ body.page .main-navigation {
   content: "\020";
   display: block;
   height: 2px;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   width: 1em;
 }
 
@@ -4507,7 +4512,7 @@ body.page .main-navigation {
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
-  margin: calc(2 * 1rem) 1rem;
+  margin: calc(2 * 1.5rem) 1.5rem;
   word-wrap: break-word;
   /* Add extra margin when the comments section is located immediately after the
 	 * post itself (this happens on pages).
@@ -4528,24 +4533,24 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .comments-area {
-    margin: calc(3 * 1rem) calc(10% + 60px);
+    margin: calc(3 * 1.5rem) calc(10% + 60px);
   }
 }
 
 .comments-area > * {
-  margin-top: calc(2 * 1rem);
-  margin-bottom: calc(2 * 1rem);
+  margin-top: calc(2 * 1.5rem);
+  margin-bottom: calc(2 * 1.5rem);
 }
 
 @media only screen and (min-width: 768px) {
   .comments-area > * {
-    margin-top: calc(3 * 1rem);
-    margin-bottom: calc(3 * 1rem);
+    margin-top: calc(3 * 1.5rem);
+    margin-bottom: calc(3 * 1.5rem);
   }
 }
 
 .entry + .comments-area {
-  margin-top: calc(3 * 1rem);
+  margin-top: calc(3 * 1.5rem);
 }
 
 @media only screen and (min-width: 768px) {
@@ -4565,7 +4570,7 @@ body.page .main-navigation {
   content: "\020";
   display: block;
   height: 2px;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   width: 1em;
 }
 
@@ -4578,7 +4583,7 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   .comments-area .comments-title-wrap .discussion-meta {
     flex: 0 0 calc(2 * (100vw / 12));
-    margin-right: 1rem;
+    margin-right: 1.5rem;
   }
 }
 
@@ -4592,7 +4597,7 @@ body.page .main-navigation {
 }
 
 #respond .comment-user-avatar {
-  margin: 1rem 0 -1rem;
+  margin: 1.5rem 0 -1.5rem;
 }
 
 #respond .comment .comment-form {
@@ -4603,8 +4608,8 @@ body.page .main-navigation {
   display: block;
   font-size: 16px;
   position: absolute;
-  right: calc(1rem + 100%);
-  top: calc(-3.5 * 1rem);
+  right: calc(1.5rem + 100%);
+  top: calc(-3.5 * 1.5rem);
   width: calc(100vw / 12);
 }
 
@@ -4638,7 +4643,7 @@ body.page .main-navigation {
 
 .comment-list .children {
   margin: 0;
-  padding: 0 1rem 0 0;
+  padding: 0 1.5rem 0 0;
 }
 
 .comment-list > .comment:first-child {
@@ -4648,11 +4653,11 @@ body.page .main-navigation {
 .comment-list .pingback .comment-body,
 .comment-list .trackback .comment-body {
   color: #666666;
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 0.6015em;
   font-weight: 500;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .comment-list .pingback .comment-body a:not(.comment-edit-link),
@@ -4660,14 +4665,14 @@ body.page .main-navigation {
   font-weight: bold;
   font-size: 12.03008px;
   line-height: 1.5;
-  padding-left: 0.5rem;
+  padding-left: 0.75rem;
   display: block;
 }
 
 .comment-list .pingback .comment-body .comment-edit-link,
 .comment-list .trackback .comment-body .comment-edit-link {
   color: #666666;
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 500;
 }
 
@@ -4686,19 +4691,19 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .comment {
-    padding-right: calc(.5 * (1rem + calc(100vw / 12 )));
+    padding-right: calc(.5 * (1.5rem + calc(100vw / 12 )));
   }
   .comment.depth-1,
   .comment .children {
     padding-right: 0;
   }
   .comment.depth-1 {
-    margin-right: calc(3.25 * 1rem);
+    margin-right: calc(3.25 * 1.5rem);
   }
 }
 
 .comment .comment-body {
-  margin: calc(2 * 1rem) 0 0;
+  margin: calc(2 * 1.5rem) 0 0;
 }
 
 .comment .comment-meta {
@@ -4707,7 +4712,7 @@ body.page .main-navigation {
 
 .comment .comment-author .avatar {
   float: right;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
   position: relative;
 }
 
@@ -4717,7 +4722,7 @@ body.page .main-navigation {
     margin-left: inherit;
     position: absolute;
     top: 0;
-    left: calc(100% + 1rem);
+    left: calc(100% + 1.5rem);
   }
 }
 
@@ -4740,14 +4745,14 @@ body.page .main-navigation {
   height: 18px;
   position: absolute;
   background: #ffaa75;
-  left: calc(100% - 2.5rem);
+  left: calc(100% - 3.75rem);
   top: -3px;
   width: 18px;
 }
 
 @media only screen and (min-width: 768px) {
   .comment .comment-author .post-author-badge {
-    left: calc(100% + 0.75rem);
+    left: calc(100% + 1.125rem);
   }
 }
 
@@ -4800,8 +4805,8 @@ body.page .main-navigation {
 
 .comment .comment-metadata .comment-edit-link {
   position: relative;
-  padding-right: 1rem;
-  margin-right: -1rem;
+  padding-right: 1.5rem;
+  margin-right: -1.5rem;
   z-index: 1;
 }
 
@@ -4810,12 +4815,12 @@ body.page .main-navigation {
 }
 
 .comment .comment-content {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 @media only screen and (min-width: 1168px) {
   .comment .comment-content {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
   }
 }
 
@@ -4866,8 +4871,8 @@ body.page .main-navigation {
 }
 
 .discussion-avatar-list .comment-user-avatar img {
-  height: calc(1.5 * 1rem);
-  width: calc(1.5 * 1rem);
+  height: calc(1.5 * 1.5rem);
+  width: calc(1.5 * 1.5rem);
 }
 
 .discussion-meta .discussion-meta-info {
@@ -4878,12 +4883,12 @@ body.page .main-navigation {
   vertical-align: middle;
   fill: currentColor;
   transform: scale(0.6) scaleX(-1) translateY(-0.1em);
-  margin-right: -0.25rem;
+  margin-right: -0.375rem;
 }
 
 .comment-form .comment-notes,
 .comment-form label {
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 0.6015em;
   color: #666666;
 }
@@ -4891,14 +4896,14 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   .comment-form .comment-form-author,
   .comment-form .comment-form-email {
-    width: calc(50% - 0.5rem);
+    width: calc(50% - 0.75rem);
     float: right;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .comment-form .comment-form-email {
-    margin-right: 1rem;
+    margin-right: 1.5rem;
   }
 }
 
@@ -4915,7 +4920,7 @@ body.page .main-navigation {
 .archive .page-header,
 .search .page-header,
 .error404 .page-header {
-  margin: 1rem 1rem calc(3 * 1rem);
+  margin: 1.5rem 1.5rem calc(3 * 1.5rem);
 }
 
 @media only screen and (min-width: 768px) {
@@ -4969,7 +4974,7 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .hfeed .entry .entry-header {
-    margin: calc(3 * 1rem) calc(10% + 60px) calc(1rem / 2);
+    margin: calc(3 * 1.5rem) calc(10% + 60px) calc(1.5rem / 2);
   }
 }
 
@@ -4978,7 +4983,7 @@ body.page .main-navigation {
 .error-404.not-found .page-content,
 .no-results.not-found .page-title,
 .no-results.not-found .page-content {
-  margin: calc(3 * 1rem) 1rem;
+  margin: calc(3 * 1.5rem) 1.5rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -4986,14 +4991,14 @@ body.page .main-navigation {
   .error-404.not-found .page-content,
   .no-results.not-found .page-title,
   .no-results.not-found .page-content {
-    margin: calc(3 * 1rem) calc(10% + 60px) calc(1rem / 2);
+    margin: calc(3 * 1.5rem) calc(10% + 60px) calc(1.5rem / 2);
   }
 }
 
 .error-404.not-found .search-submit,
 .no-results.not-found .search-submit {
   vertical-align: middle;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .error-404.not-found .search-field,
@@ -5007,13 +5012,13 @@ body.page .main-navigation {
 /* Site footer */
 #colophon .widget-area,
 #colophon .site-info {
-  margin: calc(2 * 1rem) 1rem;
+  margin: calc(2 * 1.5rem) 1.5rem;
 }
 
 @media only screen and (min-width: 768px) {
   #colophon .widget-area,
   #colophon .site-info {
-    margin: calc(3 * 1rem) calc(10% + 60px);
+    margin: calc(3 * 1.5rem) calc(10% + 60px);
   }
 }
 
@@ -5033,8 +5038,8 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 1168px) {
   #colophon .widget-column .widget {
-    margin-left: calc(3 * 1rem);
-    width: calc(50% - (3 * 1rem));
+    margin-left: calc(3 * 1.5rem);
+    width: calc(50% - (3 * 1.5rem));
   }
 }
 
@@ -5058,12 +5063,12 @@ body.page .main-navigation {
 
 #colophon .site-info .imprint,
 #colophon .site-info .privacy-policy-link {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 /* Widgets */
 .widget {
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
   /* Make sure select elements fit in widgets. */
 }
 
@@ -5100,12 +5105,12 @@ body.page .main-navigation {
 .widget_recent_entries ul li,
 .widget_rss ul li {
   color: #666666;
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: calc(16px * 1.33);
   font-weight: 700;
   line-height: 1.2;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .widget_archive ul ul,
@@ -5134,7 +5139,7 @@ body.page .main-navigation {
 }
 
 .widget_tag_cloud .tagcloud {
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
 }
 
@@ -5150,7 +5155,7 @@ body.page .main-navigation {
 
 .widget_search .search-submit {
   display: block;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .widget_calendar .calendar_wrap {
@@ -5223,17 +5228,17 @@ body.page .main-navigation {
 .entry .entry-content > *.alignfull,
 .entry .entry-summary > *.alignfull {
   position: relative;
-  right: -1rem;
-  width: calc( 100% + (2 * 1rem));
-  max-width: calc( 100% + (2 * 1rem));
+  right: -1.5rem;
+  width: calc( 100% + (2 * 1.5rem));
+  max-width: calc( 100% + (2 * 1.5rem));
   clear: both;
 }
 
 @media only screen and (min-width: 768px) {
   .entry .entry-content > *.alignfull,
   .entry .entry-summary > *.alignfull {
-    margin-top: calc(2 * 1rem);
-    margin-bottom: calc(2 * 1rem);
+    margin-top: calc(2 * 1.5rem);
+    margin-bottom: calc(2 * 1.5rem);
     right: calc( -12.5% - 75px);
     width: calc( 125% + 150px);
     max-width: calc( 125% + 150px);
@@ -5246,14 +5251,14 @@ body.page .main-navigation {
   max-width: calc(5 * (100vw / 12));
   margin-top: 0;
   margin-right: 0;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
 }
 
 @media only screen and (min-width: 768px) {
   .entry .entry-content > *.alignleft,
   .entry .entry-summary > *.alignleft {
     max-width: calc(4 * (100vw / 12));
-    margin-right: calc(2 * 1rem);
+    margin-right: calc(2 * 1.5rem);
   }
 }
 
@@ -5263,7 +5268,7 @@ body.page .main-navigation {
   max-width: calc(5 * (100vw / 12));
   margin-top: 0;
   margin-left: 0;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -5271,7 +5276,7 @@ body.page .main-navigation {
   .entry .entry-summary > *.alignright {
     max-width: calc(4 * (100vw / 12));
     margin-left: 0;
-    margin-left: calc(2 * 1rem);
+    margin-left: calc(2 * 1.5rem);
   }
 }
 
@@ -5371,12 +5376,12 @@ body.page .main-navigation {
   transition: background 150ms ease-in-out;
   border: none;
   font-size: 0.75188em;
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   line-height: 1.2;
   box-sizing: border-box;
   font-weight: bold;
   text-decoration: none;
-  padding: 0.76rem 1rem;
+  padding: 1.14rem 1.5rem;
   outline: none;
   outline: none;
 }
@@ -5447,11 +5452,11 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-categories li,
 .entry .entry-content .wp-block-latest-posts li {
   color: #666666;
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: calc(16px * 1.33);
   font-weight: bold;
   line-height: 1.2;
-  padding-bottom: 0.75rem;
+  padding-bottom: 1.125rem;
 }
 
 .entry .entry-content .wp-block-archives li.menu-item-has-children, .entry .entry-content .wp-block-archives li:last-child,
@@ -5474,7 +5479,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-categories ul {
-  padding-top: 0.75rem;
+  padding-top: 1.125rem;
 }
 
 .entry .entry-content .wp-block-categories li ul {
@@ -5495,8 +5500,8 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-latest-posts.is-grid li {
   border-top: 2px solid #ccc;
-  padding-top: 1rem;
-  margin-bottom: 2rem;
+  padding-top: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 .entry .entry-content .wp-block-latest-posts.is-grid li a:after {
@@ -5514,7 +5519,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-preformatted {
   font-size: 0.6015em;
   line-height: 1.8;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .entry .entry-content .wp-block-verse {
@@ -5524,7 +5529,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .has-drop-cap:not(:focus):first-letter {
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 3.99em;
   line-height: 1;
   font-weight: bold;
@@ -5534,14 +5539,14 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-pullquote {
   border-color: transparent;
   border-width: 2px;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 .entry .entry-content .wp-block-pullquote blockquote {
   color: #333333;
   border: none;
-  margin-top: calc(4 * 1rem);
-  margin-bottom: calc(4.33 * 1rem);
+  margin-top: calc(4 * 1.5rem);
+  margin-bottom: calc(4.33 * 1.5rem);
   margin-left: 0;
   padding-right: 0;
 }
@@ -5566,7 +5571,7 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-pullquote cite {
   display: inline-block;
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   line-height: 1.6;
   text-transform: none;
   color: #666666;
@@ -5583,7 +5588,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-pullquote.alignleft blockquote, .entry .entry-content .wp-block-pullquote.alignright blockquote {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   padding: 0;
   text-align: right;
   max-width: 100%;
@@ -5631,8 +5636,8 @@ body.page .main-navigation {
   max-width: 100%;
   color: #fff;
   padding-right: 0;
-  margin-right: 1rem;
-  margin-left: 1rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
 }
 
 .entry .entry-content .wp-block-pullquote.is-style-solid-color blockquote.has-text-color p,
@@ -5649,14 +5654,14 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .entry .entry-content .wp-block-pullquote.is-style-solid-color.alignright, .entry .entry-content .wp-block-pullquote.is-style-solid-color.alignleft {
-    padding: 1rem calc(2 * 1rem);
+    padding: 1.5rem calc(2 * 1.5rem);
   }
 }
 
 @media only screen and (min-width: 768px) {
   .entry .entry-content .wp-block-pullquote.is-style-solid-color.alignfull {
-    padding-right: calc(10% + 58px + (2 * 1rem));
-    padding-left: calc(10% + 58px + (2 * 1rem));
+    padding-right: calc(10% + 58px + (2 * 1.5rem));
+    padding-left: calc(10% + 58px + (2 * 1.5rem));
   }
 }
 
@@ -5682,7 +5687,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-quote.is-large, .entry .entry-content .wp-block-quote.is-style-large {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   padding: 0;
   border-right: none;
 }
@@ -5705,8 +5710,8 @@ body.page .main-navigation {
 
 @media only screen and (min-width: 768px) {
   .entry .entry-content .wp-block-quote.is-large, .entry .entry-content .wp-block-quote.is-style-large {
-    margin: 1rem 0;
-    padding: 1rem 0;
+    margin: 1.5rem 0;
+    padding: 1.5rem 0;
   }
   .entry .entry-content .wp-block-quote.is-large p, .entry .entry-content .wp-block-quote.is-style-large p {
     font-size: 1.995em;
@@ -5754,7 +5759,7 @@ body.page .main-navigation {
 
 .entry .entry-content .wp-block-image.alignfull img {
   width: 100vw;
-  max-width: calc( 100% + (2 * 1rem));
+  max-width: calc( 100% + (2 * 1.5rem));
 }
 
 @media only screen and (min-width: 768px) {
@@ -5769,13 +5774,13 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-cover {
   position: relative;
   min-height: 430px;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 @media only screen and (min-width: 768px) {
   .entry .entry-content .wp-block-cover-image,
   .entry .entry-content .wp-block-cover {
-    padding: 1rem 10%;
+    padding: 1.5rem 10%;
   }
 }
 
@@ -5785,7 +5790,7 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-cover .wp-block-cover-image-text,
 .entry .entry-content .wp-block-cover .wp-block-cover-text,
 .entry .entry-content .wp-block-cover h2 {
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-size: 1.995em;
   font-weight: bold;
   line-height: 1.25;
@@ -5815,7 +5820,7 @@ body.page .main-navigation {
   .entry .entry-content .wp-block-cover-image.alignleft, .entry .entry-content .wp-block-cover-image.alignright,
   .entry .entry-content .wp-block-cover.alignleft,
   .entry .entry-content .wp-block-cover.alignright {
-    padding: 1rem calc(2 * 1rem);
+    padding: 1.5rem calc(2 * 1.5rem);
   }
 }
 
@@ -5844,8 +5849,8 @@ body.page .main-navigation {
 @media only screen and (min-width: 768px) {
   .entry .entry-content .wp-block-cover-image.alignfull,
   .entry .entry-content .wp-block-cover.alignfull {
-    padding-right: calc(10% + 58px + (2 * 1rem));
-    padding-left: calc(10% + 58px + (2 * 1rem));
+    padding-right: calc(10% + 58px + (2 * 1.5rem));
+    padding-left: calc(10% + 58px + (2 * 1.5rem));
   }
   .entry .entry-content .wp-block-cover-image.alignfull .wp-block-cover-image-text,
   .entry .entry-content .wp-block-cover-image.alignfull .wp-block-cover-text,
@@ -5877,10 +5882,10 @@ body.page .main-navigation {
 .entry .entry-content .wp-block-gallery .blocks-gallery-image figcaption,
 .entry .entry-content .wp-block-gallery .blocks-gallery-item figcaption {
   font-size: 0.6015em;
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 0.5rem;
+  padding: 0.75rem;
   text-align: center;
 }
 
@@ -5889,8 +5894,8 @@ body.page .main-navigation {
   background-color: #666666;
   border: 0;
   height: 2px;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
   max-width: 2.25em;
   text-align: right;
   /* Remove duplicate rule-line when a separator
@@ -5964,7 +5969,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-file {
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 .entry .entry-content .wp-block-file .wp-block-file__button {
@@ -5974,20 +5979,20 @@ body.page .main-navigation {
   border-radius: 5px;
   background: #0073aa;
   font-size: 16px;
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   line-height: 1.2;
   text-decoration: none;
   font-weight: bold;
-  padding: 0.75rem 1rem;
+  padding: 1.125rem 1.5rem;
   color: #fff;
   margin-right: 0;
-  margin-top: calc(0.75 * 1rem);
+  margin-top: calc(0.75 * 1.5rem);
 }
 
 @media only screen and (min-width: 1168px) {
   .entry .entry-content .wp-block-file .wp-block-file__button {
     font-size: 16px;
-    padding: 0.875rem 1.5rem;
+    padding: 1.3125rem 2.25rem;
   }
 }
 
@@ -6030,7 +6035,7 @@ body.page .main-navigation {
 }
 
 .entry .entry-content .wp-block-latest-comments .wp-block-latest-comments__comment-meta {
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
 }
 
@@ -6198,9 +6203,9 @@ object {
 .avatar {
   border-radius: 100%;
   display: block;
-  height: calc(2.25 * 1rem);
+  height: calc(2.25 * 1.5rem);
   min-height: inherit;
-  width: calc(2.25 * 1rem);
+  width: calc(2.25 * 1.5rem);
 }
 
 svg {
@@ -6212,7 +6217,7 @@ svg {
 ## Captions
 --------------------------------------------------------------*/
 .wp-caption {
-  margin-bottom: calc(1.5 * 1rem);
+  margin-bottom: calc(1.5 * 1.5rem);
 }
 
 @media only screen and (min-width: 768px) {
@@ -6238,10 +6243,10 @@ svg {
 .wp-caption-text {
   color: #666666;
   font-size: 0.6015em;
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 0.5rem;
+  padding: 0.75rem;
   text-align: center;
 }
 
@@ -6252,7 +6257,7 @@ svg {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-bottom: calc(1.5 * 1rem);
+  margin-bottom: calc(1.5 * 1.5rem);
 }
 
 .gallery-item {
@@ -6335,10 +6340,10 @@ svg {
 .gallery-caption {
   display: block;
   font-size: 0.6015em;
-  font-family: "Londrina Solid", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   line-height: 1.6;
   margin: 0;
-  padding: 0.5rem;
+  padding: 0.75rem;
 }
 
 .gallery-item > div > a {
