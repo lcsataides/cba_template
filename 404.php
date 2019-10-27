@@ -5,7 +5,7 @@
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
  * @package WordPress
- * @subpackage Twenty_Nineteen
+ * @subpackage CorrentedoBem_Theme
  * @since 1.0.0
  */
 
