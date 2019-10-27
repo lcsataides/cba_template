@@ -40,6 +40,12 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+
+@import "node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/nav";
+
 @import "sass/variables-site/variables-site";
 @import "sass/mixins/mixins-master";
 

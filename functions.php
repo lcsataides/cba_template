@@ -1,6 +1,7 @@
 <?php
 /**
- * Twenty Nineteen functions and definitions
+ * Corrente do Bem Animal functions and definitions
+ * Based on Twenty Nineteen
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -26,15 +27,7 @@ if ( ! function_exists( 'twentynineteen_setup' ) ) :
 	 * as indicating support for post thumbnails.
 	 */
 	function twentynineteen_setup() {
-		/*
-		 * Make theme available for translation.
-		 * Translations can be filed in the /languages/ directory.
-		 * If you're building a theme based on Twenty Nineteen, use a find and replace
-		 * to change 'twentynineteen' to the name of your theme in all the template files.
-		 */
 		load_theme_textdomain( 'twentynineteen', get_template_directory() . '/languages' );
-
-		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
 
 		/*
@@ -218,7 +211,8 @@ add_action( 'after_setup_theme', 'twentynineteen_content_width', 0 );
  */
 function twentynineteen_scripts() {
 	wp_enqueue_style( 'twentynineteen-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
-
+  wp_enqueue_script('jqueyr', get_template_directory_uri() .'/js/jquery-3.4.1.min.js', array('jquery'), null, true);
+  wp_enqueue_script('main script', get_template_directory_uri() .'/js/main.js', array('jquery'), null, true);
 	wp_style_add_data( 'twentynineteen-style', 'rtl', 'replace' );
 
 	if ( has_nav_menu( 'menu-1' ) ) {
