@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 node_modules
-=======
 *.log
 wp-config.php
 wp-content/advanced-cache.php
@@ -20,4 +18,3 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
->>>>>>> 5e1c6ab2e93a78a7a8312ee7e2086650a5148588
